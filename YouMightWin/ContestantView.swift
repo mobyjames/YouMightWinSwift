@@ -31,9 +31,13 @@ class ContestantView: UIView {
         backgroundColor = UIColor.clear;
 
         view = loadViewFromNib()
+        view.frame = bounds
         view.bounds = bounds
         view.autoresizingMask = [UIView.AutoresizingMask.flexibleWidth, UIView.AutoresizingMask.flexibleHeight]
         addSubview(view)
+        
+        points.layer.cornerRadius = 10
+        points.layer.masksToBounds = true;
         
         setWinningState(false)
     }

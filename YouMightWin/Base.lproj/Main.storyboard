@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uI2-Fk-3AY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -23,37 +23,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SZo-7J-Vmg">
-                                <rect key="frame" x="55" y="281" width="265" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SZo-7J-Vmg">
+                                <rect key="frame" x="55" y="318.5" width="265" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ejd-i4-8YD"/>
+                                    <constraint firstAttribute="width" constant="265" id="tJU-Y9-cJr"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You Might Win!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8b-C5-fji">
-                                <rect key="frame" x="90" y="110" width="195" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Might Win!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8b-C5-fji">
+                                <rect key="frame" x="90" y="110" width="195" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="M0A-NR-KAD"/>
+                                    <constraint firstAttribute="width" constant="195" id="MIq-VL-Biz"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Freehand575BT-RegularB" family="Freehand575 BT" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aQV-Dg-Bxr">
-                                <rect key="frame" x="55" y="331" width="265" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aQV-Dg-Bxr">
+                                <rect key="frame" x="55" y="368.5" width="265" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ao0-b2-VBR"/>
+                                    <constraint firstAttribute="width" constant="265" id="zu2-fm-aY6"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ykG-TH-EfC">
-                                <rect key="frame" x="134" y="562" width="106" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ykG-TH-EfC">
+                                <rect key="frame" x="137.5" y="562" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="3aJ-6Z-u8e"/>
+                                    <constraint firstAttribute="height" constant="30" id="eRl-Od-gvE"/>
+                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gkW-E9-UTJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.33725490196078434" green="0.55294117647058827" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ykG-TH-EfC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BSq-Rh-TYv"/>
+                            <constraint firstItem="SZo-7J-Vmg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TaL-1q-mb7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ykG-TH-EfC" secondAttribute="bottom" constant="75" id="X8F-lI-3KM"/>
+                            <constraint firstItem="aQV-Dg-Bxr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="50" id="ecw-on-536"/>
+                            <constraint firstItem="aQV-Dg-Bxr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fcW-AN-zf5"/>
+                            <constraint firstItem="A8b-C5-fji" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="geg-Ty-kMu"/>
+                            <constraint firstItem="SZo-7J-Vmg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="swq-FJ-Ica"/>
+                            <constraint firstItem="A8b-C5-fji" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="uil-A0-kfc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordInput" destination="aQV-Dg-Bxr" id="wke-Z5-dUH"/>
+                        <outlet property="usernameInput" destination="SZo-7J-Vmg" id="TLf-9h-QEU"/>
+                        <segue destination="uI2-Fk-3AY" kind="show" identifier="showContest" id="J71-IG-ncC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -67,9 +97,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nfu-fA-KoV">
-                                <rect key="frame" x="112" y="564" width="151" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nfu-fA-KoV">
+                                <rect key="frame" x="107.5" y="563" width="160" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="2l2-vU-Sab"/>
+                                    <constraint firstAttribute="height" constant="30" id="ua9-PK-XcV"/>
+                                </constraints>
                                 <state key="normal" title="Start New Round">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -77,9 +110,12 @@
                                     <action selector="startRoundAction:" destination="uI2-Fk-3AY" eventType="touchUpInside" id="C3h-i8-bOK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ll-uW-4xA">
-                                <rect key="frame" x="113" y="595" width="151" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ll-uW-4xA">
+                                <rect key="frame" x="107.5" y="597" width="160" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1Ns-Ry-MHd"/>
+                                    <constraint firstAttribute="width" constant="160" id="6kI-SG-vcq"/>
+                                </constraints>
                                 <state key="normal" title="Pick a Winner">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -87,42 +123,79 @@
                                     <action selector="pickWinnerAction:" destination="uI2-Fk-3AY" eventType="touchUpInside" id="uJU-X9-dv7"/>
                                 </connections>
                             </button>
-                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rim-Gi-SsU" customClass="ContestantView" customModule="YouMightWin" customModuleProvider="target">
-                                <rect key="frame" x="77" y="160" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rim-Gi-SsU" customClass="ContestantView" customModule="YouMightWin" customModuleProvider="target">
+                                <rect key="frame" x="197.5" y="163.5" width="100" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="68B-1v-6yI"/>
+                                    <constraint firstAttribute="width" constant="100" id="TI2-UO-6wo"/>
+                                </constraints>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fng-qL-PTk" customClass="ContestantView" customModule="YouMightWin" customModuleProvider="target">
-                                <rect key="frame" x="201" y="160" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fng-qL-PTk" customClass="ContestantView" customModule="YouMightWin" customModuleProvider="target">
+                                <rect key="frame" x="77.5" y="163.5" width="100" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="E7w-ug-aGN"/>
+                                    <constraint firstAttribute="width" constant="100" id="oyV-eo-ewx"/>
+                                </constraints>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TSs-kk-rwg" customClass="ContestantView" customModule="YouMightWin" customModuleProvider="target">
-                                <rect key="frame" x="77" y="282" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TSs-kk-rwg" customClass="ContestantView" customModule="YouMightWin" customModuleProvider="target">
+                                <rect key="frame" x="197.5" y="283.5" width="100" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="c1w-ev-lCt"/>
+                                    <constraint firstAttribute="height" constant="100" id="oXi-XT-qyO"/>
+                                </constraints>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sdr-48-fba" customClass="ContestantView" customModule="YouMightWin" customModuleProvider="target">
-                                <rect key="frame" x="201" y="282" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vfj-M6-YAY" customClass="ContestantView" customModule="YouMightWin" customModuleProvider="target">
+                                <rect key="frame" x="137.5" y="403.5" width="100" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="ctL-Xd-vfo"/>
+                                    <constraint firstAttribute="width" constant="100" id="uH9-tv-gmS"/>
+                                </constraints>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vfj-M6-YAY" customClass="ContestantView" customModule="YouMightWin" customModuleProvider="target">
-                                <rect key="frame" x="139" y="406" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You Might Win!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHZ-kb-9H2">
-                                <rect key="frame" x="113" y="65" width="148" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Might Win!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHZ-kb-9H2">
+                                <rect key="frame" x="0.0" y="65" width="375" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7Ah-tH-k6Q"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Freehand575BT-RegularB" family="Freehand575 BT" pointSize="38"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sdr-48-fba" customClass="ContestantView" customModule="YouMightWin" customModuleProvider="target">
+                                <rect key="frame" x="77.5" y="283.5" width="100" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="JT4-bV-f24"/>
+                                    <constraint firstAttribute="height" constant="100" id="Jkn-UY-Gsg"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.33725490200000002" green="0.55294117649999996" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Sdr-48-fba" firstAttribute="centerY" secondItem="gbu-de-zGc" secondAttribute="centerY" id="118-Me-7kQ"/>
+                            <constraint firstItem="3Ll-uW-4xA" firstAttribute="top" secondItem="Nfu-fA-KoV" secondAttribute="bottom" constant="4" id="4hb-mG-bcS"/>
+                            <constraint firstItem="MHZ-kb-9H2" firstAttribute="leading" secondItem="7XG-nq-5Or" secondAttribute="leading" id="606-0G-MEF"/>
+                            <constraint firstItem="rim-Gi-SsU" firstAttribute="centerY" secondItem="gbu-de-zGc" secondAttribute="centerY" constant="-120" id="6Rx-ES-FDa"/>
+                            <constraint firstItem="7XG-nq-5Or" firstAttribute="bottom" secondItem="3Ll-uW-4xA" secondAttribute="bottom" constant="40" id="EMe-eq-Lxx"/>
+                            <constraint firstItem="Fng-qL-PTk" firstAttribute="centerX" secondItem="gbu-de-zGc" secondAttribute="centerX" constant="-60" id="Hfg-k1-lqD"/>
+                            <constraint firstItem="7XG-nq-5Or" firstAttribute="trailing" secondItem="MHZ-kb-9H2" secondAttribute="trailing" id="JYA-gG-TXg"/>
+                            <constraint firstItem="Sdr-48-fba" firstAttribute="centerX" secondItem="gbu-de-zGc" secondAttribute="centerX" constant="-60" id="Oe7-7c-jPg"/>
+                            <constraint firstItem="3Ll-uW-4xA" firstAttribute="centerX" secondItem="gbu-de-zGc" secondAttribute="centerX" id="QWv-1R-jEG"/>
+                            <constraint firstItem="Vfj-M6-YAY" firstAttribute="centerX" secondItem="gbu-de-zGc" secondAttribute="centerX" id="UAI-4n-50z"/>
+                            <constraint firstItem="TSs-kk-rwg" firstAttribute="centerY" secondItem="gbu-de-zGc" secondAttribute="centerY" id="UNK-aU-c2o"/>
+                            <constraint firstItem="TSs-kk-rwg" firstAttribute="centerX" secondItem="gbu-de-zGc" secondAttribute="centerX" constant="60" id="jY0-gb-QvX"/>
+                            <constraint firstItem="Vfj-M6-YAY" firstAttribute="centerY" secondItem="gbu-de-zGc" secondAttribute="centerY" constant="120" id="lui-fT-EAb"/>
+                            <constraint firstItem="MHZ-kb-9H2" firstAttribute="top" secondItem="7XG-nq-5Or" secondAttribute="top" constant="45" id="o4W-3x-9bR"/>
+                            <constraint firstItem="Nfu-fA-KoV" firstAttribute="centerX" secondItem="gbu-de-zGc" secondAttribute="centerX" id="rax-Dw-wNO"/>
+                            <constraint firstItem="rim-Gi-SsU" firstAttribute="centerX" secondItem="gbu-de-zGc" secondAttribute="centerX" constant="60" id="zUp-5K-Z6d"/>
+                            <constraint firstItem="Fng-qL-PTk" firstAttribute="centerY" secondItem="gbu-de-zGc" secondAttribute="centerY" constant="-120" id="zgi-g4-HQG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7XG-nq-5Or"/>
                     </view>
+                    <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="pickWinner" destination="3Ll-uW-4xA" id="GMd-YB-dLF"/>
                         <outlet property="startRound" destination="Nfu-fA-KoV" id="zvz-KO-NYl"/>
@@ -135,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mQz-m3-A5B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928.79999999999995" y="22.938530734632685"/>
+            <point key="canvasLocation" x="938" y="27"/>
         </scene>
     </scenes>
 </document>
